@@ -1,0 +1,32 @@
+void SOPPenambahanBarang() {
+    printf("\n=================================================\n");
+    printf("=== SOP Penambahan Barang ===\n");
+    printf("=================================================\n");
+    printf("Langkah-langkah untuk menambahkan barang ke dalam sistem inventaris:\n");
+    printf("1. Pilih menu 'Penambahan Inventaris' pada sistem.\n");
+    printf("2. Masukkan nama pemberi inventaris.\n");
+    printf("   - Gunakan nama lengkap pemberi, misalnya: 'John Doe'.\n");
+    printf("3. Masukkan tanggal pemberian inventaris.\n");
+    printf("   - Format tanggal harus MM/DD/YYYY, misalnya: '12/15/2024'.\n");
+    printf("4. Pilih lokasi penyimpanan aset dari daftar berikut:\n");
+    printf("   - [1] Sekretariat Kemakom (Kode Awalan: A)\n");
+    printf("   - [2] Ruang Auditorium (Kode Awalan: B)\n");
+    printf("   - [3] Lab Komputer (Kode Awalan: C)\n");
+    printf("   - Masukkan angka sesuai lokasi yang diinginkan.\n");
+    printf("5. Masukkan kode aset tanpa prefix (awalan kode).\n");
+    printf("   - Sistem akan otomatis menambahkan prefix sesuai lokasi penyimpanan.\n");
+    printf("   - Contoh: Jika kode aset adalah '12345' di Sekretariat Kemakom, hasilnya adalah 'A12345'.\n");
+    printf("6. Masukkan nama aset.\n");
+    printf("   - Gunakan nama yang jelas dan deskriptif, misalnya: 'Laptop Dell Inspiron'.\n");
+    printf("7. Masukkan kategori aset.\n");
+    printf("   - Contoh: 'Elektronik', 'Furnitur', 'Peralatan Kantor', dll.\n");
+    printf("8. Masukkan kondisi aset.\n");
+    printf("   - Contoh: 'Baru', 'Baik', 'Rusak Ringan', dll.\n");
+    printf("9. Masukkan jumlah aset.\n");
+    printf("   - Jumlah harus berupa bilangan bulat positif, misalnya: '5'.\n");
+    printf("10. Periksa kembali semua data yang telah diinput.\n");
+    printf("    - Pastikan data akurat dan lengkap sebelum menyimpan.\n");
+    printf("11. Simpan data dengan menekan Enter setelah semua input selesai.\n");
+    printf("12. Sistem akan menampilkan pesan 'Data berhasil ditambahkan' jika data berhasil disimpan.\n");
+    printf("\n=================================================\n");
+}
