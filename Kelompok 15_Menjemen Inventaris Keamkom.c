@@ -341,7 +341,7 @@ void peminjaman2() {
 // Fungsi untuk menampilkan data peminjaman barang
 void Tampilbarangpinjam() {
     if (totalpinjam == 0) { // jika tidak ada barang yang dipinjam
-        printf("\n** Tidak ada data inventaris yang dipinjam. **\n");
+        printf("\n Tidak ada data inventaris yang dipinjam.\n");
     } else { // jika ada barang yang dipinjam
         printf("\n=====================================================================\n");
         printf("| No |    Kode    |        Nama        |   Kategori   |   Jumlah   |\n");
@@ -365,7 +365,7 @@ void tampilkanData() {
     // Cek apakah jumlah inventaris itu 0
     if (totalAset == 0) { // jika tidak ada inventaris
         // Menampilkan pesan bahwa tidak ada inventaris yang tersedia
-        printf("\n** Tidak ada data inventaris yang tersedia. **\n");
+        printf("\n Tidak ada data inventaris yang tersedia. \n");
     } else { // jika ada inventaris
         // Menampilkan header tabel data inventaris
         printf("\n==============================================================================================================================================================\n");
@@ -436,7 +436,7 @@ void tambahData() {
                 kodeawal = 'C'; // Set prefix kode untuk lokasi 3
                 break;
             default:
-                printf("** Pilihan tidak valid. Harap pilih lokasi yang tersedia. **\n"); // Jika input tidak valid
+                printf(" Pilihan tidak valid. Harap pilih lokasi yang tersedia. \n"); // Jika input tidak valid
         }
     } while (pilihanLokasi < 1 || pilihanLokasi > 3); // Looping jika input lokasi tidak valid
 
@@ -461,7 +461,7 @@ void tambahData() {
 
     // Menambah total aset dan memberikan konfirmasi
     totalAset++; // Menambah jumlah total aset
-    printf("\n** Data berhasil ditambahkan! **\n"); // Konfirmasi bahwa data berhasil ditambahkan
+    printf("\nData berhasil ditambahkan! \n"); // Konfirmasi bahwa data berhasil ditambahkan
 }
 
 // Fungsi Menghapus Inventaris
@@ -491,7 +491,7 @@ void hapusData() {
 
     // Jika kode tidak ditemukan
     if (!ketemu) {
-        printf("\n** Data dengan kode %s tidak ditemukan. **\n", kode); // pesan jika data tidak ada
+        printf("\n Data dengan kode %s tidak ditemukan. \n", kode); // pesan jika data tidak ada
     }
 }
 
@@ -560,7 +560,7 @@ void pencarianSekuen() {
     }
 
     // Jika data tidak ditemukan, tambahkan penanganan
-    printf("\n** Data tidak ditemukan. **\n");
+    printf("\n Data tidak ditemukan. \n");
 }
 // fungsi pencarian data dengan metode binary search
 void pencarianBinary() {
@@ -651,7 +651,7 @@ void pencarianBinary() {
 
     // jika data tidak ditemukan
     if (!ditemukan) {
-        printf("\n** Data dengan tanggal %s tidak ditemukan. **\n", tanggal);
+        printf("\n Data dengan tanggal %s tidak ditemukan. \n", tanggal);
         printf("Usaha pencarian: %d kali\n", usaha);
     }
 }
@@ -806,7 +806,7 @@ void transaksiPeminjamanItem() {
                 totalpinjam++;
 
                 // tampilkan pesan berhasil
-                printf("\n** Barang berhasil dipinjam! **\n");
+                printf("\n Barang berhasil dipinjam! \n");
                 printf("===============================================\n");
                 printf("Nama           : %s\n", inventaris[i].nama); // tampilkan nama barang
                 printf("Kategori       : %s\n", inventaris[i].kategori); // tampilkan kategori barang
@@ -831,7 +831,7 @@ void cetakHasilAkhir() {
     file = fopen("Hasil_Akhir_Inventaris.txt", "w"); // membuka file untuk menulis hasil akhir
 
     if (file == NULL) { // cek jika file gagal dibuka
-        printf("\n** Gagal membuat file. **\n");
+        printf("\n Gagal membuat file. \n");
         return;
     }
 
@@ -875,7 +875,7 @@ void editData() {
     for (int i = 0; i < totalAset; i++) {
         if (strcmp(inventaris[i].kode, kode) == 0) { // Cek kode cocok atau tidak
             ditemukan = 1; // tandain kode aset ketemu
-            printf("\n** Data ditemukan. **\n");
+            printf("\nData ditemukan. \n");
             printf("Pemberi        : %s\n", inventaris[i].Pemberi); // Menampilkan data lama
             printf("Tanggal Memberi: %s\n", inventaris[i].tanggalmemberi);
             printf("Kode           : %s\n", inventaris[i].kode);
@@ -900,14 +900,14 @@ void editData() {
 
 
             // Memberi pesan kalau data sudah berhasil diubah
-            printf("\n** Data berhasil diubah! **\n");
+            printf("\n Data berhasil diubah! \n");
             break; // Keluar dari loop karena data sudah diedit
         }
     }
 
     // Jika kode inventaris tidak ketemu, beri pesan ini
     if (!ditemukan) {
-        printf("\n** Data dengan kode %s tidak ditemukan. **\n", kode);
+        printf("\n Data dengan kode %s tidak ditemukan. \n", kode);
     }
 }
 void transaksiPenguranganItem() {
@@ -932,17 +932,17 @@ void transaksiPenguranganItem() {
             found = 1; // Menandai bahwa kode aset ditemukan
             if (inventaris[i].jumlah >= jumlah) { // Mengecek apakah jumlah mencukupi
                 inventaris[i].jumlah -= jumlah; // Mengurangi jumlah aset
-                printf("\n** Jumlah berhasil dikurangi! **\n");
+                printf("\n Jumlah berhasil dikurangi! \n");
             } else {
                 // Pesan jika jumlah tidak mencukupi
-                printf("\n** Jumlah aset tidak mencukupi untuk dikurangi. **\n");
+                printf("\n Jumlah aset tidak mencukupi untuk dikurangi. \n");
             }
             return; // Keluar dari fungsi setelah transaksi selesai
         }
     }
     // Jika kode aset tidak ditemukan
     if (!found) {
-        printf("\n** Data dengan kode %s tidak ditemukan. **\n", kode);
+        printf("\n Data dengan kode %s tidak ditemukan. \n", kode);
     }
 }
 int Menutama() {
@@ -1128,11 +1128,11 @@ void pengembalian() {
                 return;
             } else {
                 // Jika jumlah yang dikembalikan melebihi jumlah yang dipinjam
-                printf("\n** Jumlah yang dikembalikan melebihi jumlah yang dipinjam! **\n");
+                printf("\n Jumlah yang dikembalikan melebihi jumlah yang dipinjam! \n");
                 return;
             }
         }
     }
     // Jika kode barang tidak ditemukan dalam daftar peminjaman
-    printf("\n** Data peminjaman dengan kode %s tidak ditemukan. **\n", kode);
+    printf("\n Data peminjaman dengan kode %s tidak ditemukan. \n", kode);
 }
