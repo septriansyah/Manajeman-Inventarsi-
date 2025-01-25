@@ -74,13 +74,6 @@ Sistem Manajemen Inventaris KEMAKOM adalah aplikasi canggih yang dirancang untuk
 
 ---
 
-## ⚠️ **Catatan Penting**
-
-- Program ini eksklusif untuk anggota BEM KEMAKOM. Non-anggota tidak memiliki akses ke menu utama.
-- Pastikan data yang dimasukkan sesuai dengan format yang diminta untuk menghindari error.
-
----
-
 ## 🤝 **Kontribusi**
 
 Kami mengundang Anda untuk ikut serta dalam pengembangan proyek ini! Berikut adalah langkah-langkahnya:
@@ -106,7 +99,7 @@ Kami mengundang Anda untuk ikut serta dalam pengembangan proyek ini! Berikut ada
 Jika Anda memiliki pertanyaan atau ide brilian untuk pengembangan lebih lanjut, jangan ragu untuk menghubungi kami:
 
 - **Nama Pengembang**: [Dewa Ahmad Septriansyah]
-- **Email**: [Septriansyah31@gimail.com]
+- **Email**: [Septriansyah31@gmail.com]
 - **GitHub**: [Septriansyah]
 
 ---
